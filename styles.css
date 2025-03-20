@@ -130,7 +130,16 @@ font-size: 1rem;
             }
 
         }
-     
-  
-    
+
+       
+    @media all and ( min-width: 1000px){
+        #gallery-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+        figure:last-child{
+            grid-column: span 2;
+        }
+    }
   
