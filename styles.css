@@ -3,13 +3,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serifx;
-    background-color: #cccccc;
+   
 }
 
 .header-container{
     background-color: #120323;
    padding: 2rem;
    max-width: 100%;
+  
     
 }
 .header-container h1{ color: #97bf04;
@@ -44,19 +45,21 @@ max-width: 100%;
     text-decoration: none;
     border: 2px solid #97bf04;
 }
-    main h2{
+    main h2{ background-color: #cccccc;
 text-align: center;
     padding: 1rem 1rem 0 1rem;
+   
 }
 
 
-#gallery-container{
+#gallery-container{  background-color: #cccccc;
 
     padding: 2em 2em 0 2em;
 }
 figure img{ display: flex;
     width: 100%;
     margin: 0 auto;
+    border-bottom: 10px solid #97bf04 ;
     
 
    
@@ -66,13 +69,13 @@ figure{
 background-color: white;
 padding: 2rem 2rem 1rem 2rem;
 margin: 0rem 1rem 1rem 1rem;
-   
+
 }
 
 figure h3{
    background-color: white;
     padding: 1em 0 0 0;
-    border-top: 0.5em solid #97bf04 ;
+   
 }
 figure p{
   background: white;
@@ -83,8 +86,51 @@ footer{ padding: 1rem 2.5rem;
     background-color: #d9043d;
     color: white;
     text-align: center;
+  
 
 }
 small{
     background-color: #cccccc00;
 }
+
+@media all and (min-width: 768px) {
+   
+    .header-container li a{
+        color: white;
+        text-decoration: none;
+        border: none;
+      
+    }
+
+    
+    .header-container ul , li{
+        background-color: #d9043d;
+        display: flex;
+justify-content: space-around;
+margin: 0 2rem 0 2rem ;
+    list-style-type: none;
+ 
+font-size: 1rem;
+
+    }
+    main h2{ 
+        text-align: center;
+            padding: 1rem 1rem 0 1rem;
+            font-size: 1rem;
+           
+        }
+      
+            #gallery-container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: auto;
+            }
+            figure:last-child{
+                grid-column: span 2;
+            }
+
+        }
+     
+  
+    
+  
